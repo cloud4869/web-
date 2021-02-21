@@ -27,6 +27,12 @@ body {
     left: 120px;
 }
 
+.text {
+    top: 0;
+    left: 0;
+    position:absolute;
+}
+
 @keyframes moving {
     100% {
         transform: translateX(-3000px);
