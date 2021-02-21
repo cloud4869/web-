@@ -1,3 +1,4 @@
+/*bodyのマージンを0にして、webの余白をしている。画面外に出た部分を隠している。 */
 body {
     margin: 0;
     overflow: hidden;
@@ -5,8 +6,10 @@ body {
 
 .sky {
     background-image: url("sky.jpg");
+    /*画面のサイズ比に合わせたサイズにしている*/
     width: 100vw;
     height: 100vh;
+    /*画面横幅いっぱいになるようにしている*/
     background-size: cover;
     position: relative;
 }
@@ -20,7 +23,7 @@ body {
     left: 0;
 }
 
-.car img{
+.car img {
     width: 100px;
     position: absolute;
     bottom: 0;
@@ -41,6 +44,7 @@ body {
 
 @keyframes suspention {
     100% {
+        /*移動するアニメーション*/
         transform: translateY(-10px);
     }
     50% {
@@ -51,6 +55,7 @@ body {
     }
 }
 
+/*画面が動く時間と開始から終了までの設定。infiniteは無限。*/
 .moving {
     animation: moving 10s linear infinite;
 }
